@@ -3,7 +3,8 @@ def safe_print_integer(value):
     try:
         i = 0
         add = i + value
-        print("{:d}".format(add))
-        return True
+        print("{:d}".format(value))
     except TypeError:
         return False
+    else:
+        return True
