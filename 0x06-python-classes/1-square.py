@@ -5,8 +5,8 @@ Square class module with private instance attribute - size
 
 
 class Square:
+    """
+    private instance
+    """
     def __init__(self, size=0):
-        """
-        private instance
-        """
         self.__size = size
