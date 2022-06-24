@@ -35,7 +35,6 @@ class Square:
     """
     def area(self):
         return self.__size ** 2
-    
     """
     public instance method for print a square
     """
