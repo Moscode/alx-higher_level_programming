@@ -2,6 +2,8 @@
 """
 This is Square module with new feature
 """
+
+
 class Square:
     """
     private instance attribute & error handling
