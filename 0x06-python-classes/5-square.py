@@ -31,10 +31,13 @@ class Square:
         else:
             self.__size = value
     """
-    public instance method
+    public instance method for area
     """
     def area(self):
         return self.__size ** 2
+    """
+    public instance method for print a square
+    """
     def my_print(self):
         if (self.__size):
             for i in range(self.__size):
