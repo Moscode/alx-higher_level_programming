@@ -21,7 +21,7 @@ class Square:
             self.__position = position
         else:
             raise TypeError(
-                    "position must be a tuple of 2 position integers"
+                    "position must be a tuple of 2 positive integers"
                     )
     """
     getter & setter - size
@@ -53,7 +53,7 @@ class Square:
             self.__value = value
         else:
             raise TypeError(
-                    "position must be a tuple of 2 positive integer"
+                    "position must be a tuple of 2 positive integers"
                     )
     """
     public instance method for area
