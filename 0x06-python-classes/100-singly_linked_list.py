@@ -2,6 +2,8 @@
 """
 Node and it's pointer
 """
+
+
 class Node:
     """
     Init method of the Node
@@ -44,9 +46,12 @@ class Node:
         else:
             self.__next_node = value
 
+
 """
 Singly linkedlist class
 """
+
+
 class SinglyLinkedList:
     """
     Init method of the class
