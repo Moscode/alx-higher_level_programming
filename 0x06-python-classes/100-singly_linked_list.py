@@ -7,6 +7,12 @@ class Node:
     Init method of the Node
     """
     def __init__(self, data, next_node=None):
+        """
+        handling edge cases
+
+        data: data to Node
+        next_node: pointer to the next data
+        """
         if (type(data) != int):
             raise TypeError("data must be an integer")
         else:
@@ -46,6 +52,9 @@ class SinglyLinkedList:
     Init method of the class
     """
     def __init__(self):
+        """
+        setting the head to None by default
+        """
         self.__head = None
         """
         sorting and inserting method
