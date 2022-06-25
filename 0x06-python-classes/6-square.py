@@ -49,7 +49,7 @@ class Square:
     def position(self, value):
         if (type(value) == tuple and
                 len(value) == 2 and
-                value[0] > 0 and value[1] > 0):
+                value[0] >= 0 and value[1] >= 0):
             self.__value = value
         else:
             raise TypeError(
