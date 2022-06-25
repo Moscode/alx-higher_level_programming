@@ -17,6 +17,8 @@ class Square:
             self.__size = size
         if (type(position) == tuple and
                 len(position) == 2 and
+                type(position[0]) == int and
+                type(position[1]) == int and
                 position[0] >= 0 and position[1] >= 0):
             self.__value = position
         else:
@@ -49,6 +51,8 @@ class Square:
     def position(self, value):
         if (type(value) == tuple and
                 len(value) == 2 and
+                type(value[0]) == int and
+                type(value[1]) == int and
                 value[0] >= 0 and value[1] >= 0):
             self.__value = value
         else:
