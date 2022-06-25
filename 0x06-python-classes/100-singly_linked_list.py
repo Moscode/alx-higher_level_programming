@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+Node and it's pointer
+"""
 class Node:
+    """
+    Init method of the Node
+    """
     def __init__(self, data, next_node=None):
         if (type(data) != int):
             raise TypeError("data must be an integer")
@@ -32,8 +38,13 @@ class Node:
         else:
             self.__next_node = value
 
-
+"""
+Singly linkedlist class
+"""
 class SinglyLinkedList:
+    """
+    Init method of the class
+    """
     def __init__(self):
         self.__head = None
         """
