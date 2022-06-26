@@ -68,6 +68,9 @@ class Square:
     public instance method for print a square
     """
     def my_print(self):
+        """
+        Method that helps printing square
+        """
         if (self.__size == 0):
             print("")
         else:
@@ -75,8 +78,11 @@ class Square:
                 print("")
             for i in range(self.__size):
                 print(" " * self.__value[0] + "#" * self.__size)
-    
+
     def __str__(self):
+        """
+        method that helps return result and use print on instance of the class
+        """
         text = ""
         if (self.__size == 0):
             pass
