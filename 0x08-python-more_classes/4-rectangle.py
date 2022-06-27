@@ -5,6 +5,7 @@ Rectangle is modelling of the math geometry shapee rectangle
 
 
 class Rectangle:
+    """Rectangle class"""
     def __init__(self, width=0, height=0):
         """Initialize instance attributes once called
             Args:
@@ -74,6 +75,7 @@ class Rectangle:
             return 0
         perimeter = 2 * (self.__height + self.__width)
         return perimeter
+
     def __str__(self):
         """User-friendly representation of the Rectangle
 
@@ -88,6 +90,7 @@ class Rectangle:
             if h < self.__height - 1:
                 rect.append("\n")
         return "".join(rect)
+
     def __repr__(self):
         obj = "Rectangle(" + str(self.width) + ", "
         obj += str(self.height) + ")"
