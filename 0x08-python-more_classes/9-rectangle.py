@@ -1,0 +1,123 @@
+#!/usr/bin/python3
+"""
+Rectangle is modelling of the math geometry shapee rectangle
+"""
+
+
+class Rectangle:
+    number_of_instances = 0
+    print_symbol = "#"
+    def __init__(self, width=0, height=0):
+        """Initialize instance attributes once called
+            Args:
+                width (int, >= 0): set width size
+                height (int, >= 0): set height size
+        """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = width
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = height
+        Rectangle.number_of_instances += 1
+
+    @property
+    def width(self):
+        """Getter for width private instance attribute
+            Returns (int, >= 0): width value
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, width):
+        """ Setter for width private instance attribute
+            Args:
+                width (int, >= 0): set the value of width
+        """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = width
+
+    @property
+    def height(self):
+        """Getter for height private instance attribute
+            Returns (int, >= 0): height value
+        """
+        return self.__height
+
+    @height.setter
+    def height(self, height):
+        """Setter for height private instance attribute
+            Args:
+                height (int, >= 0): set the value of height
+        """
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = height
+
+    def area(self):
+        """Calculate area of a rectangle
+            Returns (int): area value
+        """
+        return self.__height * self.__width
+
+    def perimeter(self):
+        """Calculate perimeter of a rectangle
+            Returns (int): perimeter value
+        """
+        if (self.__height == 0 or self.__width == 0):
+            return 0
+        perimeter = 2 * (self.__height + self.__width)
+        return perimeter
+    def __str__(self):
+        """User-friendly representation of the Rectangle
+            Returns: # as a representation of the rectangle
+        """
+        if (self.__height == 0 or self.__width == 0):
+            return ""
+        rect = []
+        for h in range(self.__height):
+            for w in range(self.__width):
+                rect.append(str(self.print_symbol))
+            if h < self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
+    def __repr__(self):
+        """Interpreter-friend output
+            Print internal representation of an object
+        """
+        obj = "Rectangle(" + str(self.width) + ", "
+        obj += str(self.height) + ")"
+        return obj
+    def __del__(self):
+        """Deleting instances of this class
+            Print message to verify that
+        """
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Compare two rectanges
+            Returns: returns bigger rectangle by area
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() == rect_2.area():
+            return rect_1
+        elif rect_1.area() > rect_2.area():
+            return rect_1
+        else:
+            return rect_2
+    @classmethod
+    def square(cls, size=0):
+        return cls(size, size)
