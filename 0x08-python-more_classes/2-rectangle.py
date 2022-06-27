@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
-Rectangle is modelling of the math geometry shapee rectangle
+Rectangle is modelling of the math geometry shape rectangle
 """
 
 
 class Rectangle:
+    """Rectangle class"""
     def __init__(self, width=0, height=0):
         """Initialize instance attributes once called
             Args:
