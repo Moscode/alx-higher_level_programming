@@ -5,8 +5,11 @@ Rectangle is modelling of the math geometry shapee rectangle
 
 
 class Rectangle:
+    """Rectangle Class"""
     number_of_instances = 0
+
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """Initialize instance attributes once called
             Args:
@@ -77,6 +80,7 @@ class Rectangle:
             return 0
         perimeter = 2 * (self.__height + self.__width)
         return perimeter
+
     def __str__(self):
         """User-friendly representation of the Rectangle
             Returns: # as a representation of the rectangle
@@ -90,6 +94,7 @@ class Rectangle:
             if h < self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
+
     def __repr__(self):
         """Interpreter-friend output
             Print internal representation of an object
@@ -97,12 +102,14 @@ class Rectangle:
         obj = "Rectangle(" + str(self.width) + ", "
         obj += str(self.height) + ")"
         return obj
+
     def __del__(self):
         """Deleting instances of this class
             Print message to verify that
         """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Compare two rectanges
