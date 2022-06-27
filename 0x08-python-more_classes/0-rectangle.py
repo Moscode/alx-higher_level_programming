@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Simplest class possible
-    Rectangle class
-"""
+
+"""Simplest class possible"""
 
 
 class Rectangle:
+    """Rectangle class"""
     pass
