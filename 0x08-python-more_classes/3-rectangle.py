@@ -5,6 +5,7 @@ Rectangle is modelling of the math geometry shapee rectangle
 
 
 class Rectangle:
+    """Rectangle class"""
     def __init__(self, width=0, height=0):
         """Initialize instance attributes once called
             Args:
