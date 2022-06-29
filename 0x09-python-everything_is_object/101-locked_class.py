@@ -1,4 +1,7 @@
 class LockedClass():
+    """Class and instances cannot dynamically create attribute
+        except first_name
+    """
     def __init__(self):
         first_name = "Moses"
 
