@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class LockedClass():
     """Class and instances cannot dynamically create attribute
         except first_name
