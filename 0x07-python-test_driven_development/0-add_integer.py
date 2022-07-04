@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" Add two integers
-    Args:
-        a (int): first  integer, b (int): second integer
-    Return:
-        Sum of the two integers"""
+"""
+    Takes two values and return their sum
+"""
 
 
 def add_integer(a, b=98):
-    """ 
-    Takes two values and return their sum 
+    """ Returns addition of 2 integers.
+        Args:
+            a (int): first number
+            b (int): second number or 98 default
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
