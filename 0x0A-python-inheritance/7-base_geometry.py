@@ -14,6 +14,7 @@ class BaseGeometry:
         Area method doing nothing yet
         """
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         """
         Validating if the value of pass to value is int and > 0
