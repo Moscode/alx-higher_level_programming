@@ -2,6 +2,8 @@
 """
 Method to determine if it's an instance
 """
+
+
 def is_same_class(obj, a_class):
     """
         Args:
