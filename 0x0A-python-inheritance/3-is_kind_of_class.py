@@ -1,4 +1,4 @@
-#!/usr/bin/pytho""""
+#!/usr/bin/python3
 """
 Function to check if obj is an instance of, or instance of a class inherited from
 """
