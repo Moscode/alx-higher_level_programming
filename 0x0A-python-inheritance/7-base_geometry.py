@@ -9,6 +9,7 @@ class BaseGeometry:
     """
     BaseGeometry with a method
     """
+
     def area(self):
         """
         Area method doing nothing yet
