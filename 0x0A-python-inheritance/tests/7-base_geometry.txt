@@ -86,4 +86,63 @@ Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+case 9: Passing list to method
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+----------------------------------------------------------------
+
+case 10: Passing dict to method
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+-----------------------------------------------------------------
+
+case 11: Passing None to method
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+------------------------------------------------------------------
+
+case 12: passing tuple to method
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+-------------------------------------------------------------------
+
+case 13: passing one argument to area method
+>>> bg = BaseGeometry()
+>>> bg.area(5)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+---------------------------------------------------------------------
+
+casse 14: passing two arguments to area method
+
+>>> bg = BaseGeometry()
+>>> bg.area(5, 5)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 3 were given
+
+-----------------------------------------------------------------------
