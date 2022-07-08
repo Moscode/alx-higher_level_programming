@@ -19,7 +19,12 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        if attrs != None:
+        """ Filter dict using list
+            Args:
+                attrs (list): each props there should be used as a filter
+            Returns (dict): return the filter attributes based on args
+        """
+        if attrs is not None:
             newDict = {}
             listForName = list(self.__dict__)
             for i in range(len(attrs)):
