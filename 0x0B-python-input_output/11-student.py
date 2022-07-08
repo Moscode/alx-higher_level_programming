@@ -33,7 +33,11 @@ class Student:
                         newDict[listForName[j]] = self.__dict__[listForName[j]]
             return newDict
         return self.__dict__
+
     def reload_from_json(self, json):
+        """Reset attributes for the object
+            Arg (dict): props and values
+        """
         self.first_name = json["first_name"]
         self.last_name = json["last_name"]
         self.age = json["age"]
