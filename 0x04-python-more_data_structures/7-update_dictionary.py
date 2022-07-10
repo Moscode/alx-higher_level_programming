@@ -11,6 +11,5 @@ def update_dictionary(a_dictionary, key, value):
             key (string): key to set
             value (any type): value to set
     """
-    for i in range(len(a_dictionary)):
-        a_dictionary[key] = value
+    a_dictionary[key] = value
     return a_dictionary
