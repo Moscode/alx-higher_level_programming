@@ -16,4 +16,4 @@ def print_sorted_dictionary(a_dictionary):
     for key in sorted_key:
         value_list.append(a_dictionary[key])
     for i in range(len(sorted_key)):
-        print("{}:{}".format(sorted_key[i], value_list[i]))
+        print("{}: {}".format(sorted_key[i], value_list[i]))
