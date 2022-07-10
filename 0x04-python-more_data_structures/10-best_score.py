@@ -10,7 +10,7 @@ def best_score(a_dictionary):
             a_dictionary (dict): dictionary to check through
         Returns (int): max score
     """
-    if a_dictionary is None:
+    if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
         return None
     max_score = 0
     max_key = ""
