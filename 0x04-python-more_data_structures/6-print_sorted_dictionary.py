@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """
-
+Function to sort dictionary using keys
 """
 
 
 def print_sorted_dictionary(a_dictionary):
-    """
-
+    """ Function for dictionary sorting
+        Args:
+            a_dictionary (dictionary): dictionary to sort
+        Returns (dictionary): sorted
     """
     key_list = list(a_dictionary)
     value_list = []
