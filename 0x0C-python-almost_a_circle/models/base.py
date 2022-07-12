@@ -3,12 +3,16 @@
 
 
 class Base:
+    """ Module of a base"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """For initiaizing id
+        """ For initiaizing id
+            
             Args:
-                id (int)
+                id (int): identification number for each instance
+
+            Returns: None
         """
         if id is not None:
             self.id = id
