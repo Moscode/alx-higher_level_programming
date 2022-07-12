@@ -3,7 +3,13 @@
 
 
 class Base:
-    """ Module of a base"""
+    """Module of a base
+    
+
+    Attributes:
+        id (int): Describes the identity of each instance
+        __nb_objects (int): Describes the number of instances of our class
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
