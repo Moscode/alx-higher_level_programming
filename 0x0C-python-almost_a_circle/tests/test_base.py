@@ -19,7 +19,7 @@ class TestBaseClassInstantiation(unittest.TestCase):
         b3 = Base(12)
         self.assertEqual(b3.id, 12)
 
-        def test_three_bases(self):
+    def test_three_bases(self):
         b1 = Base()
         b2 = Base()
         b3 = Base()
