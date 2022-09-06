@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const arg = process.argv[2];
-if (isNaN(arg)) console.log('Missing Size');
+if (isNaN(arg)) console.log('Missing size');
 const intVersion = Math.floor(arg);
 for (let i = 0; i < intVersion; i++) {
   const temp = [];
