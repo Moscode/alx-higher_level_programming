@@ -7,10 +7,10 @@ class Rectangle {
     }
   }
 
-  print () {
-    for (let i = 0; i < this.h; i++) {
+  print() {
+    for (let i = 0; i < this.height; i++) {
       const store = [];
-      for (let j = 0; j < this.w; j++) {
+      for (let j = 0; j < this.width; j++) {
         store.push('X');
       }
       console.log(`${store.join('')}`);
