@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-lists all states from the database hbtn_0e_0_usa
+Use MySQLdb to query a database for states whose names
+start with the letter N
 """
 
 if __name__ == '__main__':
