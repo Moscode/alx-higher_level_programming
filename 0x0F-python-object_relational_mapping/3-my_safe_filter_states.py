@@ -12,6 +12,11 @@ if __name__ == '__main__':
     passwdInput = sys.argv[2]
     dbInput = sys.argv[3]
     stateInput = sys.argv[4]
+
+    for char in stateInput:
+        if char == ';':
+            break;
+
     db = MySQLdb.connect(
             host='localhost', user=userInput,
             passwd=passwdInput, db=dbInput,
