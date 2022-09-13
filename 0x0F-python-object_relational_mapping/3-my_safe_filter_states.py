@@ -16,16 +16,17 @@ if __name__ == '__main__':
     for char in stateInput:
         if char == ';':
             break
-
-    db = MySQLdb.connect(
-            host='localhost', user=userInput,
-            passwd=passwdInput, db=dbInput,
-            port=3306, charset='utf8')
-    cur = db.cursor()
-    cur.execute("""SELECT * FROM states
-            WHERE name= binary '{}' ORDER BY id ASC""".format(stateInput))
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
-    cur.close()
-    db.close()
+    
+    else:
+        db = MySQLdb.connect(
+                host='localhost', user=userInput,
+                passwd=passwdInput, db=dbInput,
+                port=3306, charset='utf8')
+        cur = db.cursor()
+        cur.execute("""SELECT * FROM states
+                WHERE name= binary '{}' ORDER BY id ASC""".format(stateInput))
+        rows = cur.fetchall()
+        for row in rows:
+            print(row)
+        cur.close()
+        db.close()
