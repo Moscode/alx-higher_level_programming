@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     for char in stateInput:
         if char == ';':
-            break;
+            break
 
     db = MySQLdb.connect(
             host='localhost', user=userInput,
